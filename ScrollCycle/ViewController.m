@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "LSScrollCycleView.h"
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+
 
 @interface ViewController ()
+
+@property (nonatomic, strong) LSScrollCycleView                 *scrollView;
 
 @end
 
@@ -16,7 +22,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self setupUI];
+
+}
+
+- (void)setupUI
+{
+    self.scrollView = [[LSScrollCycleView alloc] initWithFrame:CGRectMake(50, 100, kScreenWidth - 100 , 400)];
+    self.scrollView.imgArr = @[@"0.jpg", @"1.jpg", @"2.jpg"];
+    self.scrollView.dotsColor = [UIColor blueColor];
+    self.scrollView.currentDotColor = [UIColor purpleColor];
+    [self.view addSubview:self.scrollView];
+    
 }
 
 

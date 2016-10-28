@@ -15,6 +15,12 @@
 		39335E071DC1A55D00754B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39335E051DC1A55D00754B78 /* LaunchScreen.storyboard */; };
 		39335E121DC1A55D00754B78 /* ScrollCycleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39335E111DC1A55D00754B78 /* ScrollCycleTests.m */; };
 		39335E1D1DC1A55D00754B78 /* ScrollCycleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39335E1C1DC1A55D00754B78 /* ScrollCycleUITests.m */; };
+		39335E2C1DC1A63300754B78 /* LSScrollCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39335E2B1DC1A63300754B78 /* LSScrollCycleView.m */; };
+		39335E2F1DC1DE4C00754B78 /* LSScrollCycleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39335E2E1DC1DE4C00754B78 /* LSScrollCycleCell.m */; };
+		39335E511DC2201600754B78 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39335E4E1DC2201600754B78 /* 2.jpg */; };
+		39335E521DC2201600754B78 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39335E4F1DC2201600754B78 /* 1.jpg */; };
+		39335E531DC2201600754B78 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39335E501DC2201600754B78 /* 3.jpg */; };
+		39335E551DC2287300754B78 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39335E541DC2287300754B78 /* 0.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,14 @@
 		39335E181DC1A55D00754B78 /* ScrollCycleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollCycleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39335E1C1DC1A55D00754B78 /* ScrollCycleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollCycleUITests.m; sourceTree = "<group>"; };
 		39335E1E1DC1A55D00754B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39335E2A1DC1A63300754B78 /* LSScrollCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSScrollCycleView.h; sourceTree = "<group>"; };
+		39335E2B1DC1A63300754B78 /* LSScrollCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSScrollCycleView.m; sourceTree = "<group>"; };
+		39335E2D1DC1DE4C00754B78 /* LSScrollCycleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSScrollCycleCell.h; sourceTree = "<group>"; };
+		39335E2E1DC1DE4C00754B78 /* LSScrollCycleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSScrollCycleCell.m; sourceTree = "<group>"; };
+		39335E4E1DC2201600754B78 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		39335E4F1DC2201600754B78 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		39335E501DC2201600754B78 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		39335E541DC2287300754B78 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +119,15 @@
 				39335DFB1DC1A55D00754B78 /* AppDelegate.m */,
 				39335DFD1DC1A55D00754B78 /* ViewController.h */,
 				39335DFE1DC1A55D00754B78 /* ViewController.m */,
+				39335E2A1DC1A63300754B78 /* LSScrollCycleView.h */,
+				39335E2B1DC1A63300754B78 /* LSScrollCycleView.m */,
+				39335E2D1DC1DE4C00754B78 /* LSScrollCycleCell.h */,
+				39335E2E1DC1DE4C00754B78 /* LSScrollCycleCell.m */,
 				39335E001DC1A55D00754B78 /* Main.storyboard */,
+				39335E4F1DC2201600754B78 /* 1.jpg */,
+				39335E4E1DC2201600754B78 /* 2.jpg */,
+				39335E501DC2201600754B78 /* 3.jpg */,
+				39335E541DC2287300754B78 /* 0.jpg */,
 				39335E031DC1A55D00754B78 /* Assets.xcassets */,
 				39335E051DC1A55D00754B78 /* LaunchScreen.storyboard */,
 				39335E081DC1A55D00754B78 /* Info.plist */,
@@ -247,8 +269,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				39335E071DC1A55D00754B78 /* LaunchScreen.storyboard in Resources */,
+				39335E551DC2287300754B78 /* 0.jpg in Resources */,
 				39335E041DC1A55D00754B78 /* Assets.xcassets in Resources */,
+				39335E511DC2201600754B78 /* 2.jpg in Resources */,
+				39335E531DC2201600754B78 /* 3.jpg in Resources */,
 				39335E021DC1A55D00754B78 /* Main.storyboard in Resources */,
+				39335E521DC2201600754B78 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +301,9 @@
 			files = (
 				39335DFF1DC1A55D00754B78 /* ViewController.m in Sources */,
 				39335DFC1DC1A55D00754B78 /* AppDelegate.m in Sources */,
+				39335E2F1DC1DE4C00754B78 /* LSScrollCycleCell.m in Sources */,
 				39335DF91DC1A55D00754B78 /* main.m in Sources */,
+				39335E2C1DC1A63300754B78 /* LSScrollCycleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScrollCycle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lianshang.ScrollCycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScrollCycle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lianshang.ScrollCycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +537,7 @@
 				39335E231DC1A55D00754B78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39335E241DC1A55D00754B78 /* Build configuration list for PBXNativeTarget "ScrollCycleTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +546,7 @@
 				39335E261DC1A55D00754B78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39335E271DC1A55D00754B78 /* Build configuration list for PBXNativeTarget "ScrollCycleUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +555,7 @@
 				39335E291DC1A55D00754B78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
