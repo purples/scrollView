@@ -32,6 +32,11 @@
     self.scrollView.imgArr = @[@"0.jpg", @"1.jpg", @"2.jpg"];
     self.scrollView.dotsColor = [UIColor blueColor];
     self.scrollView.currentDotColor = [UIColor purpleColor];
+    
+    //轮播间隔
+//    self.scrollView.timeInterval = 1;
+    
+    
     [self.view addSubview:self.scrollView];
     
 }

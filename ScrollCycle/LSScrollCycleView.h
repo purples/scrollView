@@ -20,4 +20,7 @@
 /** 当前dot颜色 */
 @property (nonatomic, strong) UIColor                   *currentDotColor;
 
+/** 轮播间隔 */
+@property (nonatomic, assign) NSInteger                 timeInterval;
+
 @end
