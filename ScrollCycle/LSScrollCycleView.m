@@ -123,6 +123,15 @@ UICollectionViewDelegateFlowLayout>
     return CGSizeMake(self.bounds.size.width, self.bounds.size.height);
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+//    NSLog(@"row = %zd, %@", indexPath.row - 1, self.imgArr[indexPath.row]);
+    if ([self.delegate respondsToSelector:@selector(scrollCycleView:clickedWithIndex:)]) {
+        [self.delegate scrollCycleView:self clickedWithIndex:indexPath.row - 1];
+    }
+}
+
+#pragma mark - scrollViewDelegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     //开始滑动时，停止计时
@@ -166,11 +175,6 @@ UICollectionViewDelegateFlowLayout>
     self.currentPage -= 1;
     //松手后开始重新计时
     [self.timer  setFireDate:[NSDate distantPast]];
-}
-
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@"row = %zd, %@", indexPath.row - 1, self.imgArr[indexPath.row]);
 }
 
 - (void)setImgArr:(NSArray *)imgArr

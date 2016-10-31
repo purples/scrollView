@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class LSScrollCycleView;
+
+@protocol LSScrollCycleViewDelegate <NSObject>
+
+- (void)scrollCycleView:(LSScrollCycleView *)cycleView
+   clickedWithIndex:(NSInteger)index;
+
+@end
+
+
 @interface LSScrollCycleView : UIView
 
 /** 图片数组 */
@@ -22,5 +32,7 @@
 
 /** 轮播间隔 */
 @property (nonatomic, assign) NSInteger                 timeInterval;
+
+@property (nonatomic, assign) id<LSScrollCycleViewDelegate> delegate;
 
 @end

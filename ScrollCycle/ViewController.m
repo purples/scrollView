@@ -12,7 +12,7 @@
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
 
-@interface ViewController ()
+@interface ViewController ()<LSScrollCycleViewDelegate>
 
 @property (nonatomic, strong) LSScrollCycleView                 *scrollView;
 
@@ -32,6 +32,7 @@
     self.scrollView.imgArr = @[@"0.jpg", @"1.jpg", @"2.jpg"];
     self.scrollView.dotsColor = [UIColor blueColor];
     self.scrollView.currentDotColor = [UIColor purpleColor];
+    self.scrollView.delegate = self;
     
     //轮播间隔
 //    self.scrollView.timeInterval = 1;
@@ -41,6 +42,11 @@
     
 }
 
+#pragma mark - LSScrollCycleViewDelegate
+- (void)scrollCycleView:(LSScrollCycleView *)cycleView clickedWithIndex:(NSInteger)index
+{
+    NSLog(@"%zd", index);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
